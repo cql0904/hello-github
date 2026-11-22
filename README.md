@@ -1,6 +1,31 @@
 # hello-github
 
-由 DSH 自动创建的第一个仓库。
+这个仓库不是作品集，是用来验证「本机 Git → GitHub」整条链路是否打通的最小样例。
 
-- 账号: cql0904
-- 初始化时间: 2026-11-22 00:22:11
+## 验证目标
+
+- 本地 Git 能正常提交
+- SSH 密钥能通过 GitHub 认证（推送不输密码）
+- 能推送到远程 `main` 分支
+
+## 验证结果
+
+| 项目 | 结果 |
+|---|---|
+| 首次推送 | 2026-11-22 00:22，提交 `2025606` |
+| 认证方式 | ed25519 SSH key（无口令） |
+| 远程分支 | `origin/main` 与本地同步 |
+
+## 复现命令
+
+```bash
+git clone git@github.com:cql0904/hello-github.git
+cd hello-github
+git commit --allow-empty -m "test: pipeline check"
+git push
+```
+
+## 仓库信息
+
+- 账号：cql0904
+- 初始化：2026-11-22 00:22:11
