@@ -18,6 +18,16 @@
 
 ## 复现命令
 
+先确认前置条件：
+
+```bash
+ssh -T git@github.com          # 应返回 Hi cql0904!
+git config --global user.name  cql0904
+git config --global user.email 1217093462@qq.com
+```
+
+再跑主流程：
+
 ```bash
 git clone git@github.com:cql0904/hello-github.git
 cd hello-github
